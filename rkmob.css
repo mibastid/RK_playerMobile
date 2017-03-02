@@ -3626,12 +3626,12 @@ a.btn-lg{padding:20px 30px;margin:10px 0px 30px 0px;}
 	--whiteTransparent:rgba(255, 255, 255, 0.6); 
 	--mobileFont:'gothamrnd-book'; 
 	--rkColor: #ff0045;
+	--widthPhotoSelector:  200px;
+	--heightPhotoSelector:  150px;
 }
-.ph5mb{background-repeat:no-repeat; background-image: url( 'player_bg.jpg' ); background-size:cover; height: 96%; padding-top: 2%; padding-bottom: 2%; color: var(--darkTextColor); font-family:var(--mobileFont);}
-.ph5mb #containermb{background-color: var(--whiteTransparent);width: 90%; padding: 3%; padding-top: 30px; margin-left: 2%; border-radius: 30px;}
-@media (min-width:1000px) {
-	.ph5mb #containermb{width: 80%; padding: 3%; padding-top: 30px; margin-left: 7%;background-color: rgba(0, 255, 255, 0.6);}
-}
+.ph5mb{background-repeat:no-repeat; background-image: url( 'player_bg.jpg' ); background-size:cover; height: 98.5%; padding-top: 2%; padding-bottom: 0%; margin: 0px; color: var(--darkTextColor); font-family:var(--mobileFont);}
+.ph5mb #containermb{background-color: var(--whiteTransparent); border-radius: 30px;}
+.ph5mb #containermb{width: 90%; padding: 3%; padding-top: 30px; margin-left: 2%;}
 .ph5mb .selecttype{height: 400px;}
 .ph5mb .typeButton{float: left;	width: 50%;text-align: center;min-height: 175px;}
 .ph5mb .typeButton img{height: 175px;}
@@ -3664,9 +3664,7 @@ a.btn-lg{padding:20px 30px;margin:10px 0px 30px 0px;}
 .ph5mb .videoEffectOption#videoEffectDevil img{filter: hue-rotate(270deg);}
 .ph5mb .videoEffectOption#videoEffectHomer img{filter: hue-rotate(45deg);}
 .ph5mb .videoEffectOption#videoEffectInvert img{filter: invert(100%);}
-
-
-
+.ph5mb .cameraVideoEffectsOptions-in{height: 520px;}
 .ph5mb .microslist {float: left; position: relative; font-size: 35px;}
 .ph5mb #microphone-meterContainer {float: right; position: relative; }
 .ph5mb .clearmb {clear:both; margin-bottom:10px;}
@@ -3717,7 +3715,7 @@ a.btn-lg{padding:20px 30px;margin:10px 0px 30px 0px;}
 .ph5mb .audioEffectButton{ cursor: pointer;display:inline-block;*display:inline;*zoom:1;vertical-align:top;}
 .ph5mb .videoEffectSelectorButtons{margin-top: 0px !important}
 .ph5mb img#thumbnail_img{ display: block; border-radius: 30px; width: 480px; height: 360px; margin: auto;}
-.ph5mb .photoSelector{border-radius: 10px; border: 1px solid var(--darkTextColor); width: 200px;height: 150px;background-color: red;}
+.ph5mb .photoSelector{border-radius: 10px; border: 1px solid var(--darkTextColor); width: var(--widthPhotoSelector);height: var(--heightPhotoSelector);background-color: red;}
 .ph5mb .takePhotoOptions{position: relative;float: right;top: -175px;right: 5px;}
 .ph5mb .takePhotoUser {border: 1px solid var(--darkTextColor); color:var(--darkTextColor);border-radius: 30px;height: 50px;width: 180px;font-size:25px;background:transparent;line-height: 30px;text-align: center;line-height: 50px;cursor:pointer;padding: 3px 0px; margin: 15px;}
 .ph5mb .takePhotoUser .takePhotoUserText {font-size:25px;color:var(--darkTextColor);}
@@ -3732,7 +3730,7 @@ a.btn-lg{padding:20px 30px;margin:10px 0px 30px 0px;}
 .ph5mb .rec-uploaded-header .mdi{font-size: 70px;}
 .ph5mb .rec-uploaded-header #recsharenow{font-size: 30px; color: #3e5157; margin-top: 50px; margin-bottom: 50px;}
 .ph5mb .rec-uploaded-comment .rec-uploaded-comment-text, .ph5mb .rec-uploaded-socialmedia-text, .ph5mb .rec-uploaded-shorturl-text{font-size: 25px; font-weight: bold; color: #3e5157; }
-.ph5mb .rec-uploaded-comment img#rec-uploaded-img-share{width: 200px; height: 150px; border-radius: 20px;}
+.ph5mb .rec-uploaded-comment img#rec-uploaded-img-share{width: var(--widthPhotoSelector);height: var(--heightPhotoSelector); border-radius: 20px;}
 .ph5mb .rec-uploaded-comment #rectextshare{width: 625px; height: 150px; margin-left: 20px; border-radius: 10px; padding: 10px;font-family:var(--mobileFont);font-size: 18px;}
 .ph5mb .rec-uploaded-socialmedia .mdi{font-size: 80px; display: inline-block; margin-left: 35px;}
 .ph5mb .rec-uploaded-socialmedia .rec-uploaded-socialmedia-text{display: inline-block;vertical-align: middle; line-height: 80px; margin-top: -40px; margin-right: 50px;}
@@ -3740,9 +3738,27 @@ a.btn-lg{padding:20px 30px;margin:10px 0px 30px 0px;}
 .ph5mb .rec-uploaded-shorturl input#recordingUrl{border: 1px solid var(--darkTextColor);border-radius: 5px;    width: 490px;   margin: 0px 50px 0px 50px;font-size: 20px;line-height: 20px;background: #f0f0f0;color: var(--darkTextColor);resize:none;vertical-align: middle;cursor:default;}
 .ph5mb .rec-uploaded-shorturl #buttonurlcopy{color:var(--darkTextColor);font-size:25px;line-height:25px;padding:5px 20px;border:1px solid var(--darkTextColor);border-radius:30px;vertical-align: middle;cursor:pointer;font-family:var(--mobileFont);}
 .ph5mb .rec-uploaded-header #recdownloadbutton {cursor:pointer;background-color: var(--rkColor);color: #fff;border-radius: 45px 45px 45px 45px;border: 2px solid var(--rkColor);outline: none;font-family: var(--mobileFont);font-weight: bold; font-size: 35px; padding: 10px 25px;display:inline-block;margin:10px;}
-.ph5mb .layoutnoheadphonesnoeffectstext{background: rgba(0,0,0,0.75); color: #fff; width: 80%; height: 250px; left: 10%;bottom: 100px;  position: relative; font-size: 40px; text-align: center; padding: 20px; padding-top: 100px; border-radius: 30px;}
-.ph5mb .layoutnoheadphonesnoeffects{background: rgba(255,255,255,0.01);; position: relative; width: 100%; bottom: 400px; height: 410px;}
+.ph5mb .layoutnoheadphonesnoeffectstext .noeffects{background: rgba(0,0,0,0.75); color: #fff; width: 80%; height: 250px; left: 10%;bottom: 100px;  position: relative; font-size: 40px; text-align: center; padding: 20px; padding-top: 100px; border-radius: 30px;}
+.ph5mb .layoutnoheadphonesnoeffects .noeffects{background: rgba(255,255,255,0.01);; position: relative; width: 100%; bottom: 400px; height: 410px;}
 
 
+
+
+
+@media (min-device-width: 768px) {
+	.ph5mb{
+		--widthPhotoSelector:  160px;
+		--heightPhotoSelector:  120px;
+	}
+	.ph5mb #containermb{background-color: rgba(0, 255, 255, 0.6);width: 80%; padding: 3%; padding-top: 30px; margin-left: 7%;}
+	.ph5mb .takePhotoOptions {top: -165px;}
+	.ph5mb .rec-uploaded-comment #rectextshare {width: 580px; height: var(--heightPhotoSelector);}
+	.ph5mb .rec-uploaded-socialmedia .mdi {font-size: 70px;}
+	.ph5mb .rec-uploaded-shorturl input#recordingUrl{width: 470px; margin: 0px 25px 0px 25px;}
+
+
+
+
+}
 /********************/
 
