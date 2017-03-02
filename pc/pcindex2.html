@@ -1,0 +1,15 @@
+<div class="selecttype">
+	<div class="selecttypebuttons">
+		<div class="selecttypebuttonstext" id="singtoday">What do you want to sing today?</div>
+		<div class="typekar" onclick="javascript:gokaraoke();">
+			<img src="https://d4rgvppl55fks.cloudfront.net/es/img3/ic_karaoke_enabled_480.png">
+			<span class="typetextunder" id="typekartextunder">Instrumental cover without the lead vocal, and with synchronized lyrics on screen.</span>
+		</div>
+		<div class="typesa" onclick="javascript:gosingalong();">
+			<img src="https://d4rgvppl55fks.cloudfront.net/es/img3/ic_singalong_enabled_480.png">
+			<span class="typetextunder" id="typesatextunder">The original song, including the lead vocal, with lyrics on screen. Recommended for beginners and to sing duets with your favourite singers.</span>
+		</div>
+	</div>
+</div>
+
+<script>function gokaraoke(){typeKaraoke="karaoke",fnSongDataForPlayer(idSong,0)}function gosingalong(){typeKaraoke="singalong",fnSongDataForPlayer(idSong,1)}$("#container").stop(!0,!0).animate({"background-color":"transparent"}),$("#singtoday").html(langtrad.singtoday),$("#typekartextunder").html(langtrad.karexplication),$("#typesatextunder").html(langtrad.saexplication);</script>

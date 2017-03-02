@@ -1,0 +1,53 @@
+<!-- AÑADIDO PARA QUE FUNCIONE JQUERY Y EL ESTILO -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="rkmob.css">
+<link rel="stylesheet" type="text/css" href="http://cdn.materialdesignicons.com/1.8.36/css/materialdesignicons.min.css">
+<!-- *******************************************- -->
+
+<div class="ph5mb">
+  <div id="containermb">
+
+    <div id="cameraVideoEffectsOptions" class="">
+     <div class="rec-uploaded-header">
+      <span class="mdi mdi-cloud-download"></span>
+      <div class="rec-uploaded-header-text" id="recpublisheddownload">Your recording should start downloading<br>when you clic this button</div>
+      <div class="clearmb"></div>
+      <div id="recdownloadbutton" onclick="javascript:startprivatedownload();">Download</div> 
+    </div>
+  </div>
+
+  <form name="ud" id="uprecform2" enctype="multipart/form-data">
+    <input type="hidden" name="s">
+    <input type="hidden" name="u">
+    <input type="hidden" name="ss">
+    <input type="hidden" name="a">
+    <input type="hidden" name="sd">
+    <input type="hidden" name="h">
+    <input type="hidden" name="sa">
+    <input type="hidden" name="p">
+    <input type="hidden" name="c">
+    <input type="hidden" name="vs">
+    <input type="hidden" name="vv">
+    <input type="hidden" name="rd">
+    <input type="hidden" name="ae">
+    <input type="hidden" name="ve">
+    <input type="hidden" name="tn">
+    <input type="hidden" name="rf">
+    <input type="hidden" name="ims">
+    <input type="hidden" name="wc">
+    <input type="hidden" name="du">
+    <input type="hidden" name="df">
+    <input type="hidden" name="di">
+    <input type="hidden" name="dc">
+    <input type="hidden" name="dt">
+    <input type="hidden" name="fb">
+    <input type="hidden" name="ts">
+    <input type="hidden" name="pt">
+  </form>
+
+</div>
+</div>
+
+
+<script>function startprivatedownload(){$("#recdownloadbutton").hide(),$("input[name=s]").val(idSong),$("input[name=u]").val(infoUser[0]),$("input[name=ss]").val(infoUser[2]),flagOnlyAudio?$("input[name=a]").val(1):$("input[name=a]").val(0),finalFlagSoloOrDuet?$("input[name=sd]").val(1):$("input[name=sd]").val(0),$("input[name=h]").val(withHeadphones),$("input[name=sa]").val(isSingAlong),$("input[name=p]").val(finalPrivacySettingsPublicOrPrivate),$("input[name=c]").val(finalUserDescription),$("input[name=vs]").val(finalVolumeSong),$("input[name=vv]").val(finalVolumeUser),$("input[name=rd]").val(finalTimeSinc),$("input[name=ae]").val(finalAudioEffect),$("input[name=ve]").val(finalVideoEffect),$("input[name=tn]").val(tone),""==musicFile?1==isSingAlong?$("input[name=rf]").val("singalong"):$("input[name=rf]").val("youtube"):$("input[name=rf]").val(musicFile+".mp4"),$("input[name=ims]").val(1),$("input[name=fb]").val(finalRecordingId),$("input[name=ts]").val(encodeURI($("#title").html())),$('input[name=un]').val(encodeURI(infoUser[1])),$("input[name=pt]").val(langtrad.recprivatedownload),document.getElementById("uprecform2").action="/up_private_recording.php",document.getElementById("uprecform2").method="post",window.open("about:blank","formpopup","directories=no,titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,width=600,height=300"),document.getElementById("uprecform2").target="formpopup",document.getElementById("uprecform2").submit(),$("#alldisabled").hide(),$("#segure-Close-Player").stop(!0,!0).animate({top:"0"},100,function(){$("#segure-Close-Player").css("opacity","0"),$("#segure-Close-Player").hide(),$("#alldisabled").hide()})}if($('input[name="previousScreen"]').css("display","none"),$('input[name="nextScreen"]').css("display","inline"),$('input[name="nextScreen"]').prop("value",langtrad.close),$("#container").css("position","relative"),$("#container").css("min-height","400px"),$("#cameraVideoEffectsOptions").css("position","relative"),$("#cameraVideoEffectsOptions").css("transform","none"),$("#cameraVideoEffectsOptions").css("text-align","center"),$("#controlsContainer").css("position","relative"),$("#controlsContainer").css("margin","10px auto"),$("#container").stop(!0,!0).animate({width:"40%",margin:"0px auto",top:"15%",height:"180px",left:"0%"},timeVisualEffects),$("#container").css("min-height","150px"),$("#cameraVideoEffectsOptions").stop(!0,!0).animate({top:"0",left:"0",width:"100%",height:"100%"},timeVisualEffects),$("#controlsContainer").stop(!0,!0).animate({width:"40%",top:"15%",left:"0"},timeVisualEffects),$("#titleSong").css("display","none"),$("#userProfile").css("display","none"),$("#closeplayer").css("display","none"),$("#reportkaraoke").css("display","none"),$(window).off(),document.removeEventListener("fullscreenchange",a1),document.removeEventListener("mozfullscreenchange",a2),document.removeEventListener("webkitfullscreenchange",a3),document.removeEventListener("msfullscreenchange",a4),$('input[name="nextScreen"]').click(function(e){closePlayer()}),"undefined"==typeof index2f)var index2g=0;$("#recpublisheddownload").html(langtrad.recdownload),$("#recdownloadbutton").html(langtrad.download);</script>
+

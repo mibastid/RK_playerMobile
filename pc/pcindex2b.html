@@ -1,0 +1,69 @@
+<div class="">
+  <div id="audioInputOptionsContainer" class="">
+    <div class="">
+      <span class="optionText" id="setmicroinput">3. Select microphone input</span>
+    </div>
+
+	  <div class="microslist">
+    	<li class="dropdown small">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="microSelected">Default</a>
+        <ul class="dropdown-menu" id="microSelectorList">
+        </ul>
+      </li>
+      <div class="selectarrow"><span class="mdi mdi-chevron-down"></span></div>
+		</div>
+
+
+    <div id="microphone-meterContainer">
+    	<span id="vumetermax">Max</span>
+      <div class="vumeterDiv" id="vumeter90to100"></div>
+      <div class="vumeterDiv" id="vumeter80to90"></div>
+      <span class="vumeterSeparator"></span>
+      <div class="vumeterDiv" id="vumeter70to80"></div>
+      <div class="vumeterDiv" id="vumeter60to70"></div>
+      <div class="vumeterDiv" id="vumeter50to60"></div>
+      <div class="vumeterDiv" id="vumeter40to50"></div>
+      <div class="vumeterDiv" id="vumeter30to40"></div>
+      <div class="vumeterDiv" id="vumeter20to30"></div>
+      <div class="vumeterDiv" id="vumeter10to20"></div>
+      <div class="vumeterDiv" id="vumeter0to10"></div>
+    </div>
+      
+    <!-- <div id="microphone-monitor">
+    	<input type="checkbox" id="microphone-monitor-check" checked><span id="microphone-monitor-check-text">Monitor</span>
+    	<span id="microphone-monitor-text">In some computers monitoring can add delay to your voice. If it's uncomfortable for you, just turn it off <span class="emoji emoji1f609"></span></span>
+    </div> -->
+</div>
+<div id="microphoneAudioOptions" class="">
+  <div class="microphoneAudioOptionsTop">
+    <div class="microphoneAudioOptionsCenter">
+	    <div class="headphonesUseText">
+	      <span class="optionText" id="setheadphoneuse">4. Headphones use <span id="recommendedtext">(recommended)</span></span><div class="clear"></div>
+	      <span class="optionsubText" id="setheadphonetip">Headphones are the only way to be able to edit <br>your recording after singing. <strong>Are you using them?</strong></span>
+	    </div>
+	    <div class="headphonesUseSelector">
+	      <input type="radio" name="headphones" value="yes" id="radiohp1"> <label for="radiohp1" id="labelradiohp1">Yes</label>
+	      <input type="radio" name="headphones" value="no" id="radiohp2"> <label for="radiohp2" id="labelradiohp2">No</label>
+	    </div>
+    </div>
+  </div>
+  <div class="microphoneAudioOptionsBottom">
+    <div class="microphoneAudioOptionsCenter">
+	    <div class="headphonesUseText2">
+		    <span class="optionText" id="settyperecording">5. Set the type of your recording</span>
+		  </div>
+	    <div id="switchSoloDuet">
+	      <span class="optionText active" id="issolorec">Solo</span>
+	      <label class="switch">
+	        <input type="checkbox" name="rectype">
+	        <div class="slider round"></div>
+	      </label>
+	      <span class="optionText" id="isopenduetrec">Open duet</span>
+	    </div>
+	    <div id="selectsoloduethide"></div>
+	  </div>
+  </div>
+</div>
+</div>
+
+<script>if(canvasPlaying=!1,flagOnlyAudio||($("#container").stop(!0,!0).animate({width:"70%"},timeVisualEffects),$("#controlsContainer").stop(!0,!0).animate({width:"70%"},timeVisualEffects),$("#myvideo").show("slow")),$("#myvideo").css("transform","rotateY(180deg)"),1==isSongDuet?(2==typeSong?$('input[name="previousScreen"]').css("display","inline"):($('input[name="previousScreen"]').css("display","none"),$("#duetting-in").html(langtrad.duetting+" <strong>"+duetusername+"</strong>"),$("#sings").html("")),$("#selectsoloduethide").show()):1==isReRec?($('input[name="previousScreen"]').css("display","none"),$("#duetting-in").html(langtrad.addvoice),$("#sings").html(""),$("#selectsoloduethide").show()):($('input[name="previousScreen"]').css("display","inline"),$("#selectsoloduethide").hide()),$('input[name="nextScreen"]').css("display","none"),$('input[name="startRecord"]').css("display","inline"),flagOnlyAudio?$("#myvideo").attr("poster","https://d4rgvppl55fks.cloudfront.net/es/img3/mic_cover1.jpg"):$("#myvideo").attr("poster",""),$('input[name="previousScreen"]').click(function(e){$("#myvideo").prop("volume",0),vuMeterCanvasLoaded=$("#microphone-meter")[0],$("#container").load("/rkPlayerHTML5/index2a.html"),cleanButtonOldEventsPlayer(),$("#container").stop(!0,!0).animate({width:"90%"},timeVisualEffects),$("#controlsContainer").stop(!0,!0).animate({width:"90%"},timeVisualEffects),$("#myvideo").hide("slow")}),$('input[name="startRecord"]').click(function(e){$('input[name="headphones"]').is(":checked")?($('input[name="rectype"]').is(":checked")?finalFlagSoloOrDuet=!1:finalFlagSoloOrDuet=!0,$("#goflashplayer").hide(),$("#container").load("/rkPlayerHTML5/index2c.html"),cleanButtonOldEventsPlayer()):showHeadphonesAdvice()}),$("#radiohp1").click(function(e){withHeadphones=1}),$("#radiohp2").click(function(e){withHeadphones=0}),$("#myvideo").prop("volume",ismonitoring),"undefined"==typeof index2b){var index2b=0,element=document.createElement("script");element.src="/rkPlayerHTML5/js2/audioInputDevices.js",document.body.appendChild(element);var element=document.createElement("script");element.src="/rkPlayerHTML5/js2/vumeter.js",document.body.appendChild(element)}else $("#microSelectorList").replaceWith(audioSelectLoaded),$("#microSelected").html(audiolabelselected);$('input[name="rectype"]').change(function(e){$(this).is(":checked")?($("#isopenduetrec").addClass("active"),$("#issolorec").removeClass("active")):($("#isopenduetrec").removeClass("active"),$("#issolorec").addClass("active"))}),$("#issolorec").click(function(e){$("#issolorec").addClass("active"),$("#isopenduetrec").removeClass("active"),$('input[name="rectype"]').prop("checked",!1)}),$("#isopenduetrec").click(function(e){$("#isopenduetrec").addClass("active"),$("#issolorec").removeClass("active"),$('input[name="rectype"]').prop("checked",!0)}),$("#setmicroinput").html(langtrad.setmicroinput),$("#vumetermax").html(langtrad.vumetermax),$("#setheadphoneuse").html(langtrad.setheadphoneuse),$("#recommendedtext").html(langtrad.recommendedtext),$("#setheadphonetip").html(langtrad.setheadphonetip),$("#labelradiohp1").html(langtrad.labelradiohp1),$("#labelradiohp2").html(langtrad.labelradiohp2),$("#settyperecording").html(langtrad.settyperecording),$("#issolorec").html(langtrad.issolorec),$("#isopenduetrec").html(langtrad.isopenduetrec);</script>

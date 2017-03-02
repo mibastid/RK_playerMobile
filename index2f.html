@@ -1,0 +1,45 @@
+<!-- AÑADIDO PARA QUE FUNCIONE JQUERY Y EL ESTILO -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="rkmob.css">
+<link rel="stylesheet" type="text/css" href="http://cdn.materialdesignicons.com/1.8.36/css/materialdesignicons.min.css">
+<!-- *******************************************- -->
+
+<div class="ph5mb">
+  <div id="containermb">
+
+    <div id="cameraVideoEffectsOptions" class="">
+     <div class="rec-uploaded-header">
+      <span class="mdi mdi-cloud-upload"></span>
+      <div class="rec-uploaded-header-text" id="recpublishedsuccess">Your recording was published successfully</div>
+      <div class="clearmb"></div>
+      <div class="rec-uploaded-header-share" id="recsharenow">Share it now to get new fans!</div>
+    </div>
+    <div class="rec-uploaded-comment">
+     <div class="rec-uploaded-comment-text" id="reccommentadd">Comment your recording</div>
+     <div class="clearmb"></div>
+     <img id="rec-uploaded-img-share" src="https://d4rgvppl55fks.cloudfront.net/es/img3/mic_cover1.jpg">
+     <textarea rows="4" placeholder="" id="rectextshare">I recorded this song using Sing & Record by Red Karaoke. We love singing!</textarea>
+   </div>
+   <div class="lineseparator"></div>
+   <div class="rec-uploaded-socialmedia">
+    <div class="rec-uploaded-socialmedia-text" id="socialmediatext">Social media</div>
+    <span class="mdi mdi-facebook-box" id="share-fb"></span>
+    <span class="mdi mdi-twitter-box" id="share-tw"></span>
+    <span class="mdi mdi-youtube-play" id="share-yt"></span>
+    <span class="mdi mdi-email" id="share-ma"></span>
+    <span class="mdi mdi-whatsapp" id="share-wh"></span>
+  </div>
+     <div class="lineseparator"></div>
+  <div class="rec-uploaded-shorturl">
+   <div class="rec-uploaded-shorturl-text" id="shorturltext">Short URL</div>
+   <input type="text" value="" readonly id="recordingUrl">
+   <span class="rec-uploaded-shorturl-copy" id="buttonurlcopy">Copy</span>
+ </div>
+</div>
+</div>
+</div>
+
+
+
+<script>if($('input[name="previousScreen"]').css("display","none"),$('input[name="nextScreen"]').css("display","inline"),$('input[name="nextScreen"]').prop("value",langtrad.close),$("#container").css("position","relative"),$("#container").css("min-height","400px"),$("#cameraVideoEffectsOptions").css("position","relative"),$("#cameraVideoEffectsOptions").css("transform","none"),$("#cameraVideoEffectsOptions").css("text-align","center"),$("#controlsContainer").css("position","relative"),$("#controlsContainer").css("margin","10px auto"),$("#container").stop(!0,!0).animate({width:"40%",margin:"0px auto",top:"0%",left:"0%"},timeVisualEffects),$("#cameraVideoEffectsOptions").stop(!0,!0).animate({top:"0",left:"0",width:"100%",height:"100%"},timeVisualEffects),$("#controlsContainer").stop(!0,!0).animate({width:"40%",top:"0px",left:"0"},timeVisualEffects),$("#titleSong").css("display","none"),$("#userProfile").css("display","none"),$("#closeplayer").css("display","none"),$("#reportkaraoke").css("display","none"),$(window).off(),finalFlagSoloOrDuet?($("#recordingUrl").val("https://www.redkaraoke.com/profile/"+infoUser[1]+"/recordings/"+finalRecordingId),$("#share-fr").hide()):($("#recordingUrl").val("https://www.redkaraoke.com/profile/"+infoUser[1]+"/duets/"+finalRecordingId),$("#share-fr").show()),flagOnlyAudio||!finalFlagSoloOrDuet?$("#share-yt").hide():$("#share-yt").show(),$("#share-wh").hide(),$("#share-in").hide(),$('input[name="nextScreen"]').click(function(e){closePlayer()}),$("#share-fb").click(function(e){finalFlagSoloOrDuet?fnFaceBook(finalRecordingId,0):fnFaceBook(finalRecordingId,1)}),$("#share-tw").click(function(e){finalFlagSoloOrDuet?window.open("http://twitter.com/home?status="+encodeURIComponent($("#rectextshare").val())+encodeURIComponent(" @RedKaraoke")+" https://www.redkaraoke.com/profile/"+infoUser[1]+"/recordings/"+finalRecordingId):window.open("http://twitter.com/home?status="+encodeURIComponent($("#rectextshare").val())+encodeURIComponent(" @RedKaraoke")+" https://www.redkaraoke.com/profile/"+infoUser[1]+"/duets/"+finalRecordingId)}),$("#share-ma").click(function(e){finalFlagSoloOrDuet?(fnMail(finalRecordingId,0),$("#show-mail-friends-rec-textarea").html($("#rectextshare").val())):(fnMail(finalRecordingId,1),$("#show-mail-friends-duet-textarea").html($("#rectextshare").val()))}),$("#share-fr").click(function(e){fnInviteFriends(finalRecordingId,$("#title").html())}),$("#share-yt").click(function(e){window.open("/yt_upload_from_html5.php?id="+finalRecordingId+"&desc="+encodeURIComponent($("#rectextshare").val()))}),$("#buttonurlcopy").click(function(e){$("#recordingUrl").select();try{var n=document.execCommand("copy"),t=n?"successful":"unsuccessful";console.log("Copying text command was "+t)}catch(o){console.log("Oops, unable to copy")}}),"undefined"==typeof index2f)var index2f=0;$("#recpublishedsuccess").html(langtrad.recpublished),$("#recsharenow").html(langtrad.sharenow),$("#reccommentadd").html(langtrad.reccomment),$("#rectextshare").html(langtrad.reccommentdefault),$("#socialmediatext").html(langtrad.socialmedia),$("#shorturltext").html(langtrad.shorturl),$("#buttonurlcopy").html(langtrad.copy);</script>
+
