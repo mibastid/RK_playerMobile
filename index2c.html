@@ -1,66 +1,75 @@
   <!-- AÑADIDO PARA QUE FUNCIONE JQUERY Y EL ESTILO -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<link rel="stylesheet" type="text/css" href="rkmob.css">
-<link rel="stylesheet" type="text/css" href="http://cdn.materialdesignicons.com/1.8.36/css/materialdesignicons.min.css">
-<!-- *******************************************- -->
-
-<div class="ph5mb">
-  <!-- poner la clase al player de verdad -->
-  <img id="myvideocanvas" class="myvideocanvasPlayer" src="https://d4rgvppl55fks.cloudfront.net/es/img3/mic_cover1.jpg" width="320" height="240">
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="rkmob.css">
+  <link rel="stylesheet" type="text/css" href="http://cdn.materialdesignicons.com/1.8.36/css/materialdesignicons.min.css">
+  <!-- *******************************************- -->
+  <style>
+    .ph5mb #containermb{background-color: transparent;width: 100%; padding: 0%; padding-top: 30px; margin-left: 0%;}
+  </style>
 
 
-    <div class="letterDiv" id="letterDiv">
-      <div id="ytplayer"></div>
-      <div id="letterPlayer">
-        <div id="currentLyric"><font color="white"></font></div>
-        <div id="startlineeffect"></div>
-        <video id='musicfileplayer' src='' type='audio/mp4' preload="auto"></video>
-        <!-- La primera indicación de música tiene que ir en la primera línea! -->
-        <div id="lrc" style="display:none;">
+  <div class="ph5mb">
+    <div id="containermb">
+      <div id="landscapeWarning">
+        Portrait Better <span class="mdi mdi-rotate-right-variant"></span>
+      </div>
+      <!-- poner la clase al player de verdad -->
+      <img id="myvideocanvas" class="myvideocanvasPlayer" src="https://d4rgvppl55fks.cloudfront.net/es/img3/mic_cover1.jpg" width="320" height="240">
+
+
+
+      <div class="letterDiv" id="letterDiv">
+        <div id="ytplayer"></div>
+        <div id="letterPlayer">
+          <div id="currentLyric"><font color="white"></font></div>
+          <div id="startlineeffect"></div>
+          <video id='musicfileplayer' src='' type='audio/mp4' preload="auto"></video>
+          <!-- La primera indicación de música tiene que ir en la primera línea! -->
+          <div id="lrc" style="display:none;">
+          </div>
+        </div>
+      </div>
+
+      <div class="videoTopLeft videoFrame"></div>
+      <div class="videoTopRight videoFrame"></div>
+      <div class="videoBottomLeft videoFrame" ></div>
+      <div class="videoBottomRight videoFrame"></div>
+
+
+      <div id="controlPlayerMusicVolContainerBig" class="invisible">
+        <div id="controlPlayerMusicVolContainer" class="controlPlayerContainer">
+         <span class="mdi mdi-volume-high"></span> <span id="setmusicvolume">Set music volume</span>
+         <div class="controlPlayerMusicVolContainer-in">
+          <div class="musicvolpercent"><span id="musicvolpercenttext">100%</span></div>
+          <input type="range" name="controlPlayerMusicVol" class="controlPlayerMusicVolRange" min="0" max="100" step="1" value="100">
+          <span class="mdi mdi-close closeControlPlayerOption"></span>
         </div>
       </div>
     </div>
 
-    <div class="videoTopLeft videoFrame"></div>
-    <div class="videoTopRight videoFrame"></div>
-    <div class="videoBottomLeft videoFrame" ></div>
-    <div class="videoBottomRight videoFrame"></div>
-
-
-    <div id="controlPlayerMusicVolContainerBig" class="invisible">
-      <div id="controlPlayerMusicVolContainer" class="controlPlayerContainer">
-       <span class="mdi mdi-volume-high"></span> <span id="setmusicvolume">Set music volume</span>
-       <div class="controlPlayerMusicVolContainer-in">
-        <div class="musicvolpercent"><span id="musicvolpercenttext">100%</span></div>
-        <input type="range" name="controlPlayerMusicVol" class="controlPlayerMusicVolRange" min="0" max="100" step="1" value="100">
+    <div id="controlPlayerLyricSizeContainerBig" class="invisible">
+      <div id="controlPlayerLyricSizeContainer" class="controlPlayerContainer">
+       <span class="mdi mdi-menu"></span> <span id="setlyricssize">Set lyrics size</span>
+       <div class="controlPlayerLyricSizeContainer-in">
+        <div class="lyricspercent"><span>0%</span><span>10%</span><span>20%</span><span>30%</span><span>40%</span><span>50%</span><span>60%</span><span>70%</span><span>80%</span><span>90%</span><span>100%</span></div>
+        <input type="range" name="controlPlayerLyricSize" class="controlPlayerLyricSizeRange" min="10" max="80" step="1" value="45">
         <span class="mdi mdi-close closeControlPlayerOption"></span>
       </div>
     </div>
   </div>
 
-  <div id="controlPlayerLyricSizeContainerBig" class="invisible">
-    <div id="controlPlayerLyricSizeContainer" class="controlPlayerContainer">
-     <span class="mdi mdi-menu"></span> <span id="setlyricssize">Set lyrics size</span>
-     <div class="controlPlayerLyricSizeContainer-in">
-      <div class="lyricspercent"><span>0%</span><span>10%</span><span>20%</span><span>30%</span><span>40%</span><span>50%</span><span>60%</span><span>70%</span><span>80%</span><span>90%</span><span>100%</span></div>
-      <input type="range" name="controlPlayerLyricSize" class="controlPlayerLyricSizeRange" min="10" max="80" step="1" value="45">
-      <span class="mdi mdi-close closeControlPlayerOption"></span>
-    </div>
+  <div id="overkaraoke"></div>
+
+  <div id="songtimeline">
+   <div id="songtimelinenow">00:00</div>
+   <div id="songtimelineduration">
+    <span id="songtimelineposition"></span>
   </div>
-</div>
-
-<div id="overkaraoke"></div>
-
-<div id="songtimeline">
- <div id="songtimelinenow">00:00</div>
- <div id="songtimelineduration">
-  <span id="songtimelineposition"></span>
-</div>
-<div id="songtimelinetotal">00:00</div>
+  <div id="songtimelinetotal">00:00</div>
 </div>
 
 
+</div>
 </div>
 
 
