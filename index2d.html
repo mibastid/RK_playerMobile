@@ -10,22 +10,25 @@
 			Portrait Better <span class="mdi mdi-rotate-right-variant"></span>
 		</div>
 
-		<img id="myvideocanvas" class="myvideocanvasPlayer" src="https://d4rgvppl55fks.cloudfront.net/es/img3/mic_cover1.jpg" width="320" height="240">
 
 		<div style="">
-			<video id="myvideoCanvas" src="" preload="auto" type='video/webm'></video>
-			<audio preload="auto" id="songMusicPlayer" src=""></audio>
-
-			<div class="canvasPlayButton" id="canvasPlayButton"><span class="mdi mdi-play-circle-outline"></span></div>
-			<div id="pausedelayplayer" class="pausedelay"></div>
-			<div class="canvasDuration" id="canvasDuration">
-				<span class="mdi mdi-play" id="canvasPlayButtonMini"></span>
-				<div class="canvasDurationStartTime" id="canvasDurationStartTime">00:00</div>
-				<div class="canvasDurationTimeLine">
-					<span class="canvasDurationTimePosition" id="canvasDurationTimePosition"></span>
+			<div class="myvideocanvasContainer">
+				<video id="myvideoCanvas" class="myvideocanvasPlayer" src="" preload="auto" type='video/webm' poster="https://d4rgvppl55fks.cloudfront.net/es/img3/mic_cover1.jpg"></video>
+				<audio preload="auto" id="songMusicPlayer" src=""></audio>
+				<div class="canvasPlayButton" id="canvasPlayButton"><span class="mdi mdi-play-circle-outline"></span></div>
+				<div id="pausedelayplayer" class="pausedelay"></div>
+				<div class="canvasDuration" id="canvasDuration">
+					<span class="mdi mdi-play" id="canvasPlayButtonMini"></span>
+					<div class="canvasDurationStartTime" id="canvasDurationStartTime">00:00</div>
+					<div class="canvasDurationTimeLine">
+						<span class="canvasDurationTimePosition" id="canvasDurationTimePosition"></span>
+					</div>
+					<div class="canvasDurationEndTime" id="canvasDurationEndTime">00:00</div>
 				</div>
-				<div class="canvasDurationEndTime" id="canvasDurationEndTime">00:00</div>
 			</div>
+			
+
+			
 
 			<div id="cameraVideoEffectsOptions" class="">
 				<div class="cameraVideoEffectsOptions-in">
