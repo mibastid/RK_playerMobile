@@ -3642,7 +3642,8 @@ a.btn-lg{padding:20px 30px;margin:10px 0px 30px 0px;}
 .ph5mb .typeButton{float: left;	width: 50%;text-align: center;min-height: 175px;}
 .ph5mb .typeButton img{height: 175px;}
 .ph5mb #singtoday{text-align: center;padding: 45px;font-size: var(--textXXL);}
-.ph5mb #myvideoCanvas , .ph5mb #whenaudiomic{display: block; border-radius: 30px; width: 640px; height: 480px; margin: auto;}
+.ph5mb #myvideoCanvas , .ph5mb #whenaudiomic, .ph5mb #myvideo.index2a{display: block; border-radius: 30px; width: 640px; height: 480px; margin: auto;}
+.ph5mb #myvideo.index2c{ display: block; border-radius: 30px; width: 480px; height: 360px; margin: auto;}
 .ph5mb #myvideoCanvas {display: none;}/*QUITAR AL FINAL*/
 .ph5mb #cameraVideoEffectsOptions {padding-top: 30px;}
 .ph5mb .optionText {font-size: var(--textXL); font-weight: bold; position: relative;}
@@ -3694,7 +3695,7 @@ a.btn-lg{padding:20px 30px;margin:10px 0px 30px 0px;}
 .ph5mb .slider.round {  border-radius: 34px; background: var(--darkTextColor); }
 .ph5mb .slider.round:before {  border-radius: 50%;}
 .ph5mb #myvideoCanvas.myvideocanvasPlayer{ display: block; border-radius: 30px; width: 480px; height: 360px; margin: auto;}
-.ph5mb #letterDiv{background-color: rgba(0,0,0, 0.1); width: 100%; height: 520px; margin-top: 5%;}
+.ph5mb #letterDiv{background-color: rgba(0,0,0, 0.25); width: 100%; height: 520px; margin-top: 5%;}
 .ph5mb .gaptimevaluesNumbers {text-align: center;}
 .ph5mb .gaptimevaluesNumbers div{display: inline-block; text-align: center;}
 .ph5mb .gaptimevaluesNumbers div#delaytext{float: left;}
@@ -3749,7 +3750,7 @@ a.btn-lg{padding:20px 30px;margin:10px 0px 30px 0px;}
 .ph5mb #landscapeWarning{display: none; background: #ff0045; width: 100%; height: 60px; line-height: 60px; vertical-align: middle; font-size: var(--textXXL); text-align: center; font-weight: bold; color: black; text-shadow: 1px 1px #800022; margin-bottom: 20px; border-radius: 30px; border: 1px solid black; }
 .ph5mb .controlPlayerMusicVolContainer-in, .ph5mb .controlPlayerLyricSizeContainer-in{background-color: rgba(0, 0, 0, 0.6); border-radius: 50px; height: 100px; width: 100%; color: white; text-align: center; font-size: var(--textS);}
 .ph5mb #controlPlayerLyricSizeContainerBig, .ph5mb #controlPlayerMusicVolContainerBig{margin-left: 5%; width: 90%; margin-left: 5%; margin-right: 5%; text-align: left; font-size: var(--textM);}
-
+.ph5mb #letterPlayer #lrc{display: block; font-size: var(--textXXL);color: white;text-align: center;font-size: var(--textXXL);text-align: center;font-weight: bold;text-shadow: 3px 3px black;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: #9d9d9d;}
 
 
 
