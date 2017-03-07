@@ -3632,7 +3632,7 @@ a.btn-lg{padding:20px 30px;margin:10px 0px 30px 0px;}
 	--textXL:  40px;
 	--textL: 35px;
 	--textM: 30px;
-	--textS: ;  25px;
+	--textS:   20px;
 	--textXS:  20px;
 }
 .ph5mb{background-repeat:no-repeat;  background-image: url( 'player_bg.jpg' );background-size:cover; height: 98.5%; padding-top: 2%; padding-bottom: 0%; margin: 0px; color: var(--darkTextColor); font-family:var(--mobileFont);}
@@ -3644,7 +3644,7 @@ a.btn-lg{padding:20px 30px;margin:10px 0px 30px 0px;}
 .ph5mb #singtoday{text-align: center;padding: 45px;font-size: var(--textXXL);}
 .ph5mb #myvideoCanvas , .ph5mb #whenaudiomic, .ph5mb #myvideo.index2a{display: block; border-radius: 30px; width: 640px; height: 480px; margin: auto;}
 .ph5mb #myvideo.index2c{ display: block; border-radius: 30px; width: 480px; height: 360px; margin: auto;}
-.ph5mb #myvideoCanvas {display: none;}/*QUITAR AL FINAL*/
+
 .ph5mb #cameraVideoEffectsOptions {padding-top: 30px;}
 .ph5mb .optionText {font-size: var(--textXL); font-weight: bold; position: relative;}
 .ph5mb .cameraslist {float: right; position: relative; font-size: var(--textL);}
@@ -3671,7 +3671,7 @@ a.btn-lg{padding:20px 30px;margin:10px 0px 30px 0px;}
 .ph5mb .videoEffectOption#videoEffectDevil img{filter: hue-rotate(270deg);}
 .ph5mb .videoEffectOption#videoEffectHomer img{filter: hue-rotate(45deg);}
 .ph5mb .videoEffectOption#videoEffectInvert img{filter: invert(100%);}
-.ph5mb .cameraVideoEffectsOptions-in{height: 500px;}
+.ph5mb .cameraVideoEffectsOptions-in{height: 500px;padding-bottom: 15px;}
 .ph5mb .microslist {float: left; position: relative; font-size: var(--textL);}
 .ph5mb #microphone-meterContainer {float: right; position: relative; }
 .ph5mb .clearmb {clear:both; margin-bottom:10px;}
@@ -3694,7 +3694,7 @@ a.btn-lg{padding:20px 30px;margin:10px 0px 30px 0px;}
 .ph5mb input:checked + .slider:before { -webkit-transform: translateX(26px);-ms-transform: translateX(26px);  transform: translateX(26px);}
 .ph5mb .slider.round {  border-radius: 34px; background: var(--darkTextColor); }
 .ph5mb .slider.round:before {  border-radius: 50%;}
-.ph5mb #letterDiv{background-color: rgba(0,0,0, 0.25); width: 100%; height: 520px; margin-top: 5%;}
+.ph5mb #letterDiv{background-color: rgba(0,0,0, 0.05);width: 100%;height: 520px;margin-top: 5%;}
 .ph5mb .gaptimevaluesNumbers {text-align: center;}
 .ph5mb .gaptimevaluesNumbers div{display: inline-block; text-align: center;}
 .ph5mb .gaptimevaluesNumbers div#delaytext{float: left;}
@@ -3709,9 +3709,9 @@ a.btn-lg{padding:20px 30px;margin:10px 0px 30px 0px;}
 .ph5mb .balance-in .mdi-music-note {top: -30px;left: 60px;font-size: 32px;}
 .ph5mb .balance-in .mdi-account {top: 220px;left: 60px;font-size: var(--textM);}
 .ph5mb .balance-in .balance-range {display:inline-block;vertical-align: middle;height:90%;border: 1px solid #9d9d9d;text-align:center;font-size:16px;padding: 2px 5px;position:relative;width: 15px;}
-.ph5mb .balance-in input[type=range].balance-range {writing-mode: bt-lr;-webkit-appearance: none;width: 210px;height: 15px;padding: 0px;display:block;border-radius: 6px;transform: rotate(-90deg);position: absolute;top: 103px;left: -32px;border: none;outline:none;}
+.ph5mb .balance-in input[type=range].balance-range {writing-mode: bt-lr;-webkit-appearance: none;width: 210px;height: 10px;padding: 0px;display:block;border-radius: 6px;transform: rotate(-90deg);position: absolute;top: 103px;left: -31px;border: none;outline:none;}
 .ph5mb .balance-in input[type=range].balance-range {-webkit-appearance: none;-moz-appearance: none;background-image: -webkit-gradient(linear,left bottom,right top,color-stop(0.5, var(--rkColor)),color-stop(0.5, #4a0000));}
-.ph5mb .balance-in input[type=range].balance-range::-webkit-slider-thumb {-webkit-appearance: none !important;background-color: var(--rkColor);border: 1px solid var(--rkColor);height: 32px;width: 32px;border-radius:50%;}
+.ph5mb .balance-in input[type=range].balance-range::-webkit-slider-thumb {-webkit-appearance: none !important;background-color: var(--rkColor);border: 1px solid var(--rkColor);height: 36px;width: 36px;border-radius:50%;}
 .ph5mb .balance .balancetext {display:block;font-size: var(--textXS); top: 255px;position: relative;left: 35px}
 .ph5mb .gaptimelines{border-top: 0.5px solid var(--darkTextColor);}
 .ph5mb .videoEffectSelector .audioEffectButton {width:15%;min-width:90px;text-align:center;font-size: var(--textXS); padding:0px;height:56px;line-height:28px;color:#3e5157;background:transparent;border:1px solid #3e5157;border-radius:5px;cursor:pointer;margin-bottom:5px; margin-right: 5px;outline:none;}
@@ -3749,15 +3749,23 @@ a.btn-lg{padding:20px 30px;margin:10px 0px 30px 0px;}
 .ph5mb #landscapeWarning{display: none; background: #ff0045; width: 60%; height: 40px; line-height: 40px; vertical-align: middle; font-size: var(--textXL); text-align: center; font-weight: bold; color: black; text-shadow: 1px 1px #800022; margin-bottom: 20px;margin-left: 20%; border-radius: 30px; border: 1px solid black; }
 .ph5mb .controlPlayerMusicVolContainer-in, .ph5mb .controlPlayerLyricSizeContainer-in{background-color: rgba(0, 0, 0, 0.6); border-radius: 50px; height: 100px; width: 100%; color: white; text-align: center; font-size: var(--textS);}
 .ph5mb #controlPlayerLyricSizeContainerBig, .ph5mb #controlPlayerMusicVolContainerBig{margin-left: 5%; width: 90%; margin-left: 5%; margin-right: 5%; text-align: left; font-size: var(--textM);}
-.ph5mb #letterPlayer #lrc{display: block; font-size: var(--textXXL);color: white;text-align: center;font-size: var(--textXXL);text-align: center;font-weight: bold;text-shadow: 4px 4px black;-webkit-text-stroke-width: 0px;-webkit-text-stroke-color: #9d9d9d;}
+.ph5mb #letterPlayer #lrc{display: block;font-size: var(--textXXL);color: white;text-align: center;font-size: var(--textXXL);text-align: center;font-weight: 900;text-shadow: 4px 4px 8px black, 0px 0px 10px black;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: #000;}
 .ph5mb #canvasPlayButton {position: relative;top: -240px; left: 0%;text-align: center;font-size: 120px;color: white;}
 .ph5mb #canvasDuration {position: relative; top: -165px;left: 24px;padding: 5px;background-color: rgba(0,0,0,0.4);color: white;width: 420px;border-radius: 30px;}
 .ph5mb #canvasDuration * {display: inline-block;}
-.ph5mb #canvasDuration .canvasDurationTimeLine {display: inline-flex;width: 280px;background: rgba(0,0,0,0.7);;height: 10px;    border-radius: 5px;}
+.ph5mb #canvasDuration .canvasDurationTimeLine {display: inline-flex;width: 280px;background: rgba(0,0,0,0.7);height: 10px;    border-radius: 5px;}
 .ph5mb #canvasDuration .canvasDurationTimeLine #canvasDurationTimePosition{background-color: white;}
 .ph5mb div.myvideocanvasContainer{ display: block; border-radius: 30px; width: 480px; height: 360px; margin: auto;}
 /* .ph5mb #myvideoCanvas.myvideocanvasPlayer{ display: block; border-radius: 30px; width: 480px; height: 360px; margin: auto;} */
 .ph5mb div.myvideocanvasContainer #myvideoCanvas.myvideocanvasPlayer{ display: block; border-radius: 30px; width: 100%; height: 100%; margin: 0px;}
+.ph5mb .videoeffectscontainer #videoEffectSelector { margin-bottom: -20px; }
+
+
+.ph5mb input[type=range].controlPlayerMusicVolRange {-webkit-appearance: none;-moz-appearance: none;border-radius: 6px;height: 10px;background-image: -webkit-gradient(linear,left top,right top,color-stop(1.0, #ff0045),color-stop(1.0, #4a0000));padding: 0px;width: 90%;outline:none;position: relative;top: -12px;}
+.ph5mb input[type=range].controlPlayerMusicVolRange::-webkit-slider-thumb {-webkit-appearance: none !important;background-color: var(--rkColor);border: 1px solid var(--rkColor);height: 48px;width: 48px;border-radius:50%;}
+.ph5mb input[type=range].controlPlayerLyricSizeRange {-webkit-appearance: none;-moz-appearance: none;border-radius: 6px;height: 10px;background-image: -webkit-gradient(linear,left top,right top,color-stop(0.5, #ff0045),color-stop(0.5, #4a0000));padding: 0px;width: 90%;font-size:14px;outline:none;position: relative;top: -12px;}
+.ph5mb input[type=range].controlPlayerLyricSizeRange::-webkit-slider-thumb {-webkit-appearance: none !important;background-color: var(--rkColor);border: 1px solid var(--rkColor);height: 48px;width: 48px;border-radius:50%;}
+.ph5mb .controlPlayerMusicVolContainer-in .closeControlPlayerOption, .ph5mb .controlPlayerLyricSizeContainer-in .closeControlPlayerOption{font-size: var(--textXXL);/* margin-top: 50px; */position: relativ;top: 8px;x;}
 
 
 @media (min-device-width: 768px) {
@@ -3768,8 +3776,8 @@ a.btn-lg{padding:20px 30px;margin:10px 0px 30px 0px;}
 		--textXL:  35px;
 		--textL: 32px;
 		--textM: 26px;
-		--textS: ;  21px;
-		--textXS:  18px;
+		--textS:  21px;
+		--textXS: 18px;
 	}
 	.ph5mb #containermb{background-color: rgba(0, 255, 255, 0.6);width: 80%; padding: 3%; padding-top: 30px; margin-left: 7%;}
 	.ph5mb .takePhotoOptions {top: -165px;}
@@ -3780,7 +3788,6 @@ a.btn-lg{padding:20px 30px;margin:10px 0px 30px 0px;}
 
 
 }
-
 
 @media (orientation: landscape) {
 	.ph5mb #landscapeWarning{display: inline-block;}
