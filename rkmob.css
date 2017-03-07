@@ -3636,8 +3636,8 @@ a.btn-lg{padding:20px 30px;margin:10px 0px 30px 0px;}
 	--textXS:  20px;
 }
 .ph5mb{background-repeat:no-repeat;  background-image: url( 'player_bg.jpg' );background-size:cover; height: 98.5%; padding-top: 2%; padding-bottom: 0%; margin: 0px; color: var(--darkTextColor); font-family:var(--mobileFont);}
-.ph5mb #containermb{background-color: var(--whiteTransparent); border-radius: 30px;}
-.ph5mb #containermb{width: 90%; padding: 3%; padding-top: 30px; margin-left: 2%;}
+.ph5mb #container{background-color: var(--whiteTransparent); border-radius: 30px;}
+.ph5mb #container{width: 90%; padding: 3%; padding-top: 30px; margin-left: 2%;}
 .ph5mb .selecttype{height: 400px;}
 .ph5mb .typeButton{float: left;	width: 50%;text-align: center;min-height: 175px;}
 .ph5mb .typeButton img{height: 175px;}
@@ -3779,7 +3779,7 @@ a.btn-lg{padding:20px 30px;margin:10px 0px 30px 0px;}
 		--textS:  21px;
 		--textXS: 18px;
 	}
-	.ph5mb #containermb{background-color: rgba(0, 255, 255, 0.6);width: 80%; padding: 3%; padding-top: 30px; margin-left: 7%;}
+	.ph5mb #container{background-color: rgba(0, 255, 255, 0.6);width: 80%; padding: 3%; padding-top: 30px; margin-left: 7%;}
 	.ph5mb .takePhotoOptions {top: -165px;}
 	.ph5mb .rec-uploaded-comment #rectextshare {width: 580px; height: var(--heightPhotoSelector);}
 	.ph5mb .rec-uploaded-socialmedia .mdi {font-size: 70px;}
