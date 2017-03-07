@@ -3636,15 +3636,15 @@ a.btn-lg{padding:20px 30px;margin:10px 0px 30px 0px;}
 	--textXS:  20px;
 }
 .ph5mb{background-repeat:no-repeat;  background-image: url( 'player_bg.jpg' );background-size:cover; height: 98.5%; padding-top: 2%; padding-bottom: 0%; margin: 0px; color: var(--darkTextColor); font-family:var(--mobileFont);}
-.ph5mb #container{background-color: var(--whiteTransparent); border-radius: 30px;}
+.ph5mb #container{background-color: var(--whiteTransparent); border-radius: 30px;height: 900px;}
 .ph5mb #container{width: 90%; padding: 3%; padding-top: 30px; margin-left: 2%;}
 .ph5mb .selecttype{height: 400px;}
-.ph5mb .typeButton{float: left;	width: 50%;text-align: center;min-height: 175px;}
+.ph5mb .typeButton{float: left;	width: 49.9%;text-align: center;min-height: 175px;}
+.ph5mb #buttonSeparator.typeButton{float: left;	width: 0.2%;background-color: var(--darkTextColor);min-height: 175px;}
 .ph5mb .typeButton img{height: 175px;}
 .ph5mb #singtoday{text-align: center;padding: 45px;font-size: var(--textXXL);}
 .ph5mb #myvideoCanvas , .ph5mb #whenaudiomic, .ph5mb #myvideo.index2a{display: block; border-radius: 30px; width: 640px; height: 480px; margin: auto;}
 .ph5mb #myvideo.index2c{ display: block; border-radius: 30px; width: 480px; height: 360px; margin: auto;}
-
 .ph5mb #cameraVideoEffectsOptions {padding-top: 30px;}
 .ph5mb .optionText {font-size: var(--textXL); font-weight: bold; position: relative;}
 .ph5mb .cameraslist {float: right; position: relative; font-size: var(--textL);}
@@ -3682,9 +3682,9 @@ a.btn-lg{padding:20px 30px;margin:10px 0px 30px 0px;}
 .ph5mb #issolorec, .ph5mb #isopenduetrec{color: #7997a0; display: inline-block;}
 .ph5mb #switchSoloDuet{text-align: center;}
 .ph5mb .switch, .ph5mb .switch input, .ph5mb .switch .slider{display: inline-block;}
-.ph5mb .vumeterDiv{display: inline-block; border-radius: 10px; margin-right: 10px; width: 20px; height: 35px; background-color: var(--rkColor);}
-.ph5mb .vumeterSeparator{display: inline-block; border-radius: 10px; margin-right: 10px; width: 0px; height: 35px; border: 3px dotted black;}
-.ph5mb #vumetermax{font-size: var(--textS);}
+.ph5mb .vumeterDiv{display: inline-block;border-radius: 10px;margin-right: 10px;width: 15px;height: 45px;background-color: var(--rkColor);}
+.ph5mb .vumeterSeparator{display: inline-block; border-radius: 10px; margin-right: 10px; width: 0px; height: 40px; border: 3px dotted black;}
+.ph5mb #vumetermax{font-size: var(--textS);position: relative;top: -14px;}
 .ph5mb .headphonesUseSelector label{font-weight: bold}
 .ph5mb .switch {  position: relative; display: inline-block;  width: 60px;  height: 35px; margin-right: 10px; margin-left: 10px;}
 .ph5mb .switch input {display:none;}
@@ -3759,15 +3759,13 @@ a.btn-lg{padding:20px 30px;margin:10px 0px 30px 0px;}
 /* .ph5mb #myvideoCanvas.myvideocanvasPlayer{ display: block; border-radius: 30px; width: 480px; height: 360px; margin: auto;} */
 .ph5mb div.myvideocanvasContainer #myvideoCanvas.myvideocanvasPlayer{ display: block; border-radius: 30px; width: 100%; height: 100%; margin: 0px;}
 .ph5mb .videoeffectscontainer #videoEffectSelector { margin-bottom: -20px; }
-
-
 .ph5mb input[type=range].controlPlayerMusicVolRange {-webkit-appearance: none;-moz-appearance: none;border-radius: 6px;height: 10px;background-image: -webkit-gradient(linear,left top,right top,color-stop(1.0, #ff0045),color-stop(1.0, #4a0000));padding: 0px;width: 90%;outline:none;position: relative;top: -12px;}
 .ph5mb input[type=range].controlPlayerMusicVolRange::-webkit-slider-thumb {-webkit-appearance: none !important;background-color: var(--rkColor);border: 1px solid var(--rkColor);height: 48px;width: 48px;border-radius:50%;}
 .ph5mb input[type=range].controlPlayerLyricSizeRange {-webkit-appearance: none;-moz-appearance: none;border-radius: 6px;height: 10px;background-image: -webkit-gradient(linear,left top,right top,color-stop(0.5, #ff0045),color-stop(0.5, #4a0000));padding: 0px;width: 90%;font-size:14px;outline:none;position: relative;top: -12px;}
 .ph5mb input[type=range].controlPlayerLyricSizeRange::-webkit-slider-thumb {-webkit-appearance: none !important;background-color: var(--rkColor);border: 1px solid var(--rkColor);height: 48px;width: 48px;border-radius:50%;}
 .ph5mb .controlPlayerMusicVolContainer-in .closeControlPlayerOption, .ph5mb .controlPlayerLyricSizeContainer-in .closeControlPlayerOption{font-size: var(--textXXL);/* margin-top: 50px; */position: relativ;top: 8px;x;}
-
-
+.ph5mb #audioInputOptionsContainer .setmicroinput{margin-bottom: 15px;}
+.ph5mb .centerVertically{position: relative;top: 50%;transform: translateY(-50%);}
 @media (min-device-width: 768px) {
 	.ph5mb{
 		--widthPhotoSelector:  160px;
@@ -3779,19 +3777,15 @@ a.btn-lg{padding:20px 30px;margin:10px 0px 30px 0px;}
 		--textS:  21px;
 		--textXS: 18px;
 	}
-	.ph5mb #container{background-color: rgba(0, 255, 255, 0.6);width: 80%; padding: 3%; padding-top: 30px; margin-left: 7%;}
+	.ph5mb #container{width: 80%; padding: 3%; padding-top: 30px; margin-left: 7%;}
 	.ph5mb .takePhotoOptions {top: -165px;}
 	.ph5mb .rec-uploaded-comment #rectextshare {width: 580px; height: var(--heightPhotoSelector);}
 	.ph5mb .rec-uploaded-socialmedia .mdi {font-size: 70px;}
 	.ph5mb .rec-uploaded-shorturl input#recordingUrl{width: 470px; margin: 0px 25px 0px 25px;}
 	.ph5mb .photoSelector{margin-right: 12px;}
-
-
 }
-
 @media (orientation: landscape) {
 	.ph5mb #landscapeWarning{display: inline-block;}
-
 }
 
 /********************/

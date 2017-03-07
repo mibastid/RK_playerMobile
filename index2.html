@@ -5,26 +5,28 @@
 <!-- *******************************************- -->
 
 <div class="ph5mb">
-	<div id="container">
-		<div id="landscapeWarning">
-			Portrait Better <span class="mdi mdi-rotate-right-variant"></span>
-		</div>
-		<div class="selecttype">
-			<div class="selecttypebuttons">
-				<div class="selecttypebuttonstext" id="singtoday">What do you want to sing today?</div>
-				<div class="typekar typeButton" onclick="javascript:gokaraoke();">
-					<img src="https://d4rgvppl55fks.cloudfront.net/es/img3/ic_karaoke_enabled_480.png">
-					<!-- <span class="typetextunder" id="typekartextunder">Instrumental cover without the lead vocal, and with synchronized lyrics on screen.</span> -->
-				</div>
-				<div class="typesa typeButton" onclick="javascript:gosingalong();">
-					<img src="https://d4rgvppl55fks.cloudfront.net/es/img3/ic_singalong_enabled_480.png">
-					<!-- <span class="typetextunder" id="typesatextunder">The original song, including the lead vocal, with lyrics on screen. Recommended for beginners and to sing duets with your favourite singers.</span> -->
+	<div id="container" style="height: 500px;">
+		<div class="centerVertically">
+			<div id="landscapeWarning">
+				Portrait Better <span class="mdi mdi-rotate-right-variant"></span>
+			</div>
+			<div class="selecttype">
+				<div class="selecttypebuttons">
+					<div class="selecttypebuttonstext" id="singtoday">What do you want to sing today?</div>
+					<div class="typekar typeButton" onclick="javascript:gokaraoke();">
+						<img src="https://d4rgvppl55fks.cloudfront.net/es/img3/ic_karaoke_enabled_480.png">
+						<!-- <span class="typetextunder" id="typekartextunder">Instrumental cover without the lead vocal, and with synchronized lyrics on screen.</span> -->
+					</div>
+					<div class="typeButton" id="buttonSeparator"></div>
+					<div class="typesa typeButton" onclick="javascript:gosingalong();">
+						<img src="https://d4rgvppl55fks.cloudfront.net/es/img3/ic_singalong_enabled_480.png">
+						<!-- <span class="typetextunder" id="typesatextunder">The original song, including the lead vocal, with lyrics on screen. Recommended for beginners and to sing duets with your favourite singers.</span> -->
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-
 
 <script>
 	function gokaraoke(){typeKaraoke="karaoke",fnSongDataForPlayer(idSong,0)}function gosingalong(){typeKaraoke="singalong",fnSongDataForPlayer(idSong,1)}$("#container").stop(!0,!0).animate({"background-color":"transparent"}),$("#singtoday").html(langtrad.singtoday),$("#typekartextunder").html(langtrad.karexplication),$("#typesatextunder").html(langtrad.saexplication);

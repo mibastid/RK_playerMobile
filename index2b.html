@@ -6,79 +6,83 @@
 
 <div class="ph5mb">
   <div id="container">
-    <div id="landscapeWarning">
-      Portrait Better <span class="mdi mdi-rotate-right-variant"></span>
-    </div>
-    <div class="">
-      <div id="audioInputOptionsContainer" class="">
-        <div class="">
-          <span class="optionText" id="setmicroinput">3. Select microphone input</span>
-        </div>
-        <div class="clearmb"></div>
-        <div class="microslist">
-         <li class="dropdown small">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="microSelected">Default</a>
-          <ul class="dropdown-menu" id="microSelectorList">
-          </ul>
-        </li>
-        <div class="selectarrow"><span class="mdi mdi-chevron-down"></span></div>
+    <div class="centerVertically">
+      <video id='myvideo' loop type="video/webm" class="ui-widget-content index2c" autoplay poster="https://d4rgvppl55fks.cloudfront.net/es/img3/mic_cover1.jpg"></video>
+      <div class="clearmb"></div><br>
+      <div id="landscapeWarning">
+        Portrait Better <span class="mdi mdi-rotate-right-variant"></span>
       </div>
+      <div class="">
+        <div id="audioInputOptionsContainer" class="">
+          <div class="setmicroinput">
+            <span class="optionText" id="setmicroinput">3. Select microphone input</span>
+          </div>
+          <div class="clearmb"></div>
+          <div class="microslist">
+           <li class="dropdown small">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="microSelected">Default</a>
+            <ul class="dropdown-menu" id="microSelectorList">
+            </ul>
+          </li>
+          <div class="selectarrow"><span class="mdi mdi-chevron-down"></span></div>
+        </div>
 
 
-      <div id="microphone-meterContainer">
-       <div class="vumeterDiv" id="vumeter0to10"></div>
-       <div class="vumeterDiv" id="vumeter10to20"></div>
-       <div class="vumeterDiv" id="vumeter20to30"></div>
-       <div class="vumeterDiv" id="vumeter30to40"></div>
-       <div class="vumeterDiv" id="vumeter40to50"></div>
-       <div class="vumeterDiv" id="vumeter50to60"></div>
-       <div class="vumeterDiv" id="vumeter60to70"></div>
-       <div class="vumeterDiv" id="vumeter70to80"></div>
-       <span class="vumeterSeparator"></span>
-       <div class="vumeterDiv" id="vumeter80to90"></div>
-       <div class="vumeterDiv" id="vumeter90to100"></div>
-       <span id="vumetermax">Max</span>
+        <div id="microphone-meterContainer">
+         <div class="vumeterDiv" id="vumeter0to10"></div>
+         <div class="vumeterDiv" id="vumeter10to20"></div>
+         <div class="vumeterDiv" id="vumeter20to30"></div>
+         <div class="vumeterDiv" id="vumeter30to40"></div>
+         <div class="vumeterDiv" id="vumeter40to50"></div>
+         <div class="vumeterDiv" id="vumeter50to60"></div>
+         <div class="vumeterDiv" id="vumeter60to70"></div>
+         <div class="vumeterDiv" id="vumeter70to80"></div>
+         <span class="vumeterSeparator"></span>
+         <div class="vumeterDiv" id="vumeter80to90"></div>
+         <div class="vumeterDiv" id="vumeter90to100"></div>
+         <span id="vumetermax">Max</span>
+       </div>
+
      </div>
+     <br><br><br>
+     <div class="lineseparator"></div>
+     <div class="clearmb"></div>
 
-  </div>
-  <br><br><br>
-  <div class="lineseparator"></div>
-  <div class="clearmb"></div>
-  
-  <div id="microphoneAudioOptions" class="">
-    <div class="microphoneAudioOptionsTop">
-      <div class="microphoneAudioOptionsCenter">
-       <div class="headphonesUseText">
-         <span class="optionText" id="setheadphoneuse">4. Headphones use <span id="recommendedtext">(recommended)</span></span>
+     <div id="microphoneAudioOptions" class="">
+      <div class="microphoneAudioOptionsTop">
+        <div class="microphoneAudioOptionsCenter">
+         <div class="headphonesUseText">
+           <span class="optionText" id="setheadphoneuse">4. Headphones use <span id="recommendedtext">(recommended)</span></span>
+           <div class="clearmb"></div>
+           <span class="optionsubText" id="setheadphonetip">Headphones are the only way to be able to edit your recording after singing. <strong>Are you using them?</strong></span>
+         </div>
          <div class="clearmb"></div>
-         <span class="optionsubText" id="setheadphonetip">Headphones are the only way to be able to edit your recording after singing. <strong>Are you using them?</strong></span>
-       </div>
-       <div class="clearmb"></div>
-       <div class="headphonesUseSelector">
-         <input type="radio" name="headphones" value="yes" id="radiohp1"> <label for="radiohp1" id="labelradiohp1">Yes</label>
-         <input type="radio" name="headphones" value="no" id="radiohp2"> <label for="radiohp2" id="labelradiohp2">No</label>
+         <div class="headphonesUseSelector">
+           <input type="radio" name="headphones" value="yes" id="radiohp1"> <label for="radiohp1" id="labelradiohp1">Yes</label>
+           <input type="radio" name="headphones" value="no" id="radiohp2"> <label for="radiohp2" id="labelradiohp2">No</label>
+         </div>
        </div>
      </div>
-   </div>
 
-   <div class="clearmb"></div>
-   <div class="lineseparator"></div>
+     <div class="clearmb"></div>
+     <div class="lineseparator"></div>
 
-   <div class="microphoneAudioOptionsBottom">
-    <div class="microphoneAudioOptionsCenter">
-     <div class="headphonesUseText2">
-      <span class="optionText" id="settyperecording">5. Set the type of your recording</span>
-    </div>
-    <div class="clearmb"></div>
-    <div id="switchSoloDuet">
-     <span class="optionText active" id="issolorec">Solo</span>
-     <label class="switch">
-       <input type="checkbox" name="rectype">
-       <div class="slider round"></div>
-     </label>
-     <span class="optionText" id="isopenduetrec">Open duet</span>
+     <div class="microphoneAudioOptionsBottom">
+      <div class="microphoneAudioOptionsCenter">
+       <div class="headphonesUseText2">
+        <span class="optionText" id="settyperecording">5. Set the type of your recording</span>
+      </div>
+      <div class="clearmb"></div>
+      <div id="switchSoloDuet">
+       <span class="optionText active" id="issolorec">Solo</span>
+       <label class="switch">
+         <input type="checkbox" name="rectype">
+         <div class="slider round"></div>
+       </label>
+       <span class="optionText" id="isopenduetrec">Open duet</span>
+     </div>
+     <div id="selectsoloduethide"></div>
    </div>
-   <div id="selectsoloduethide"></div>
  </div>
 </div>
 </div>
